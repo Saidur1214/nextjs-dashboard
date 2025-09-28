@@ -1,5 +1,5 @@
 run = "pnpm dev"
-entrypoint = "nextjs-dashboard/app/page.tsx"
+entrypoint = "nextjs-dashboard"
 modules = ["nodejs-20"]
 
 [nix]
@@ -12,6 +12,10 @@ expertMode = true
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[[ports]]
+localPort = 3001
+externalPort = 3001
 
 # [[ports]]
 # localPort = 3001
